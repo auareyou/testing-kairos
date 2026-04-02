@@ -114,6 +114,161 @@
   /* ─── Typography ─── */
   --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
 
+  /* ─── Surfaces (hardcoded in modules — tokenized for theming) ─── */
+  --color-surface: #fff;
+  --color-surface-elevated: #fff;
+  --color-surface-code: #F8F6F2;
+  --color-surface-dashed: #F5F3F0;
+  --color-surface-dashed-border: #D5D0CA;
+  --color-scrollbar: #DDD;
+  --color-separator: #DDD;
+  --color-btn-next-bg: var(--color-text);
+  --color-btn-next-text: #fff;
+  --color-btn-next-hover: #333;
+  --color-btn-back-hover-text: #555;
+  --color-logo-gradient-start: #F5A623;
+  --color-logo-gradient-end: #E8852A;
+  --color-tab-hover: #3D3832;
+  --color-dot-filled-text: #fff;
+  --color-edge-case-title: #3D3832;
+  --color-data-conditional: #7A5510;
+
   /* ─── Layout ─── */
   --topbar-height: 60px;
+}
+
+/* ─── Dark Mode ─── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ─── Background ─── */
+    --color-bg: #1A1A1E;
+    --color-bg-card: #25252A;
+    --color-bg-field: #2A2A30;
+    --color-bg-tabs: #222228;
+    --color-bg-phase: #2A2A30;
+    --color-bg-phase-hover: #333338;
+    --color-bg-phase-completed: #1A2E22;
+    --color-bg-phase-completed-hover: #223828;
+    --color-bg-phase-active: #2E2818;
+    --color-bg-phase-active-hover: #3A3220;
+
+    /* ─── Borders ─── */
+    --color-border: #3A3A40;
+    --color-border-subtle: #303036;
+    --color-border-phase-active: #C09030;
+
+    /* ─── Text ─── */
+    --color-text: #E8E6E2;
+    --color-text-body: #C0BAB2;
+    --color-text-secondary: #A8A2A0;
+    --color-text-muted: #908A85;
+    --color-text-faint: #787878;
+    --color-text-placeholder: #686060;
+    --color-text-phase-completed: #5ABA78;
+    --color-text-phase-active: #E0A830;
+    --color-text-dot: #808080;
+
+    /* ─── Accent ─── */
+    --color-accent: #F5A623;
+    --color-accent-alpha: #F5A62344;
+
+    /* ─── Dots ─── */
+    --color-dot-border: #555;
+    --color-dot-active-border: #C09030;
+    --color-dot-completed-bg: #2D8A50;
+    --color-dot-active-bg: #A07020;
+
+    /* ─── Type Badges ─── */
+    --type-physical-bg: #1A2E22;
+    --type-physical-text: #5ABA78;
+    --type-screen-bg: #1A2240;
+    --type-screen-text: #6A9AEF;
+    --type-input-bg: #2E2215;
+    --type-input-text: #E0A040;
+    --type-action-bg: #251A3A;
+    --type-action-text: #A878EF;
+    --type-system-bg: #2E1A22;
+    --type-system-text: #E06080;
+    --type-optional-bg: #1A2E2E;
+    --type-optional-text: #40B0C0;
+    --type-complete-bg: #1A2E22;
+    --type-complete-text: #5ABA78;
+
+    /* ─── Variant Badges ─── */
+    --variant-mvp-bg: #1A2240;
+    --variant-mvp-text: #6A9AEF;
+    --variant-mvp-border: #2A3558;
+    --variant-future-bg: #251A3A;
+    --variant-future-text: #A878EF;
+    --variant-future-border: #382860;
+
+    /* ─── Status Badges ─── */
+    --status-has-view-bg: #1A2E22;
+    --status-has-view-text: #5ABA78;
+    --status-placeholder-bg: #2E2815;
+    --status-placeholder-text: #D0A020;
+    --status-missing-bg: #2E1A22;
+    --status-missing-text: #E06080;
+    --status-coming-soon-bg: #1A2240;
+    --status-coming-soon-text: #6A9AEF;
+    --status-system-bg: #2A2A30;
+    --status-system-text: #787878;
+
+    /* ─── Note Cards ─── */
+    --note-design-bg: #1A2240;
+    --note-design-border: #2A3558;
+    --note-design-text: #8AACDA;
+    --note-design-label: #6A9AEF;
+    --note-warn-bg: #2E2215;
+    --note-warn-border: #4A3818;
+    --note-warn-text: #C0A060;
+    --note-warn-label: #E0A040;
+    --note-hooked-bg: #251A3A;
+    --note-hooked-border: #382860;
+    --note-hooked-text: #A088C8;
+    --note-hooked-label: #A878EF;
+    --note-superbetter-bg: #1A2E22;
+    --note-superbetter-border: #224030;
+    --note-superbetter-text: #68B888;
+    --note-superbetter-label: #5ABA78;
+
+    /* ─── Priority Badges ─── */
+    --priority-p0-bg: #2E1A22;
+    --priority-p0-text: #E06080;
+    --priority-p1-bg: #2E2215;
+    --priority-p1-text: #E0A040;
+    --priority-p2-bg: #1A2240;
+    --priority-p2-text: #6A9AEF;
+
+    /* ─── Coverage Badges ─── */
+    --coverage-full-bg: #1A2E22;
+    --coverage-full-text: #5ABA78;
+    --coverage-e2e-bg: #1A2240;
+    --coverage-e2e-text: #6A9AEF;
+    --coverage-unit-bg: #2A2A30;
+    --coverage-unit-text: #A8A2A0;
+    --coverage-partial-bg: #2E2815;
+    --coverage-partial-text: #D0A020;
+    --coverage-none-bg: #2E1A22;
+    --coverage-none-text: #E06080;
+
+    /* ─── Surfaces ─── */
+    --color-surface: #25252A;
+    --color-surface-elevated: #2A2A30;
+    --color-surface-code: #2A2A30;
+    --color-surface-dashed: #22222A;
+    --color-surface-dashed-border: #3A3A40;
+    --color-scrollbar: #444;
+    --color-separator: #3A3A40;
+    --color-btn-next-bg: #E8E6E2;
+    --color-btn-next-text: #1A1A1E;
+    --color-btn-next-hover: #D0CEC8;
+    --color-btn-back-hover-text: #C0BAB2;
+    --color-logo-gradient-start: #F5A623;
+    --color-logo-gradient-end: #E8852A;
+    --color-tab-hover: #C0BAB2;
+    --color-dot-filled-text: #fff;
+    --color-edge-case-title: #E8E6E2;
+    --color-data-conditional: #E0A040;
+  }
 }

@@ -1,12 +1,14 @@
 .nav {
-  padding: 16px 32px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  flex-shrink: 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+.controls {
+  padding: 12px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--color-border);
-  background: #fff;
-  flex-shrink: 0;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
 }
 .btn {
   padding: 10px 24px;
@@ -27,13 +29,13 @@
   background: var(--color-bg-tabs);
   color: var(--color-text-faint);
 }
-.btnBack:hover { background: var(--color-border); color: #555; }
+.btnBack:hover { background: var(--color-border); color: var(--color-btn-back-hover-text); }
 .btnNext {
   composes: btn;
-  background: var(--color-text);
-  color: #fff;
+  background: var(--color-btn-next-bg);
+  color: var(--color-btn-next-text);
 }
-.btnNext:hover { background: #333; }
+.btnNext:hover { background: var(--color-btn-next-hover); }
 .btnHidden { visibility: hidden; }
 .counter {
   font-size: 13px;

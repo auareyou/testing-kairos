@@ -1,11 +1,11 @@
 .nav {
-  padding: 16px 32px 20px;
+  padding: 12px 32px 0;
   flex-shrink: 0;
   overflow-x: auto;
 }
 .nav::-webkit-scrollbar { height: 4px; }
 .nav::-webkit-scrollbar-track { background: transparent; }
-.nav::-webkit-scrollbar-thumb { background: #DDD; border-radius: 4px; }
+.nav::-webkit-scrollbar-thumb { background: var(--color-scrollbar); border-radius: 4px; }
 .timeline {
   display: flex;
   gap: 6px;
@@ -70,12 +70,12 @@
 .active .dotCompleted {
   background: var(--color-dot-completed-bg);
   border-color: var(--color-dot-completed-bg);
-  color: #fff;
+  color: var(--color-dot-filled-text);
 }
 .dotActive,
 .active .dotActive {
   background: var(--color-dot-active-bg);
   border-color: var(--color-dot-active-bg);
-  color: #fff;
+  color: var(--color-dot-filled-text);
   box-shadow: 0 1px 4px rgba(60,30,0,0.35);
 }

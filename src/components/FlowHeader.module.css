@@ -37,6 +37,6 @@
 .legendSeparator {
   composes: legendItem;
   margin-left: 12px;
-  border-left: 1px solid #DDD;
+  border-left: 1px solid var(--color-separator);
   padding-left: 16px;
 }

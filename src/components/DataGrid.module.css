@@ -17,7 +17,7 @@
 }
 .conditional {
   border-color: var(--color-accent-alpha);
-  color: #7A5510;
+  color: var(--color-data-conditional);
 }
 .conditional::before {
   content: '↳ ';

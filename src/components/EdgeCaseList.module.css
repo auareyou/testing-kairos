@@ -7,7 +7,7 @@
 }
 .caseItem strong {
   font-size: 13px;
-  color: #3D3832;
+  color: var(--color-edge-case-title);
   display: block;
   margin-bottom: 2px;
 }

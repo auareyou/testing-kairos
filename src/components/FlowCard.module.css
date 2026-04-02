@@ -21,7 +21,7 @@
 }
 .card::-webkit-scrollbar { width: 4px; }
 .card::-webkit-scrollbar-track { background: transparent; }
-.card::-webkit-scrollbar-thumb { background: #DDD; border-radius: 4px; }
+.card::-webkit-scrollbar-thumb { background: var(--color-scrollbar); border-radius: 4px; }
 .cardMain {
   width: 100%;
   max-width: 720px;
@@ -55,8 +55,8 @@
 .screenshot {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #F5F3F0;
-  border: 2px dashed #D5D0CA;
+  background: var(--color-surface-dashed);
+  border: 2px dashed var(--color-surface-dashed-border);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@
 .designNotesBar {
   margin-top: 12px;
   padding: 10px 14px;
-  background: #F8F6F2;
+  background: var(--color-surface-code);
   border-radius: 10px;
   border: 1px solid var(--color-border-subtle);
   font-size: 13px;

@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { FLOWS } from '../data';
 import type { FlowTab } from '../data/types';
 import { FlowHeader } from './FlowHeader';
-import { PhaseTimeline } from './PhaseTimeline';
 import { FlowCardArea } from './FlowCard';
 import { BottomNav } from './BottomNav';
 import styles from './FlowPanel.module.css';
@@ -47,9 +46,15 @@ export function FlowPanel() {
   return (
     <div className={styles.main}>
       <FlowHeader flow={flow} allSteps={allSteps} />
-      <PhaseTimeline steps={flow.steps} current={currentIndex} onNavigate={goTo} />
       <FlowCardArea steps={flow.steps} current={currentIndex} />
-      <BottomNav current={currentIndex} total={flow.steps.length} onPrev={prev} onNext={next} />
+      <BottomNav
+        current={currentIndex}
+        total={flow.steps.length}
+        onPrev={prev}
+        onNext={next}
+        steps={flow.steps}
+        onNavigate={goTo}
+      />
     </div>
   );
 }
