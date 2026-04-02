@@ -1,0 +1,11 @@
+.list { margin-top: 16px; }
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-bg-tabs);
+  font-size: 13px;
+}
+.row:last-child { border: none; }
+.label { color: var(--color-text-muted); }
+.value { color: var(--color-text); font-weight: 600; }

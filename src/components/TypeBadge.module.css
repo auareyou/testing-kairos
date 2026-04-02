@@ -1,0 +1,19 @@
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.badge svg { width: 13px; height: 13px; flex-shrink: 0; }
+.physical { background: var(--type-physical-bg); color: var(--type-physical-text); }
+.screen { background: var(--type-screen-bg); color: var(--type-screen-text); }
+.input { background: var(--type-input-bg); color: var(--type-input-text); }
+.action { background: var(--type-action-bg); color: var(--type-action-text); }
+.system { background: var(--type-system-bg); color: var(--type-system-text); }
+.optional { background: var(--type-optional-bg); color: var(--type-optional-text); }
+.complete { background: var(--type-complete-bg); color: var(--type-complete-text); }

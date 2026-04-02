@@ -1,0 +1,75 @@
+.wrapper {
+  margin-top: 16px;
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: 12px;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font-family: inherit;
+}
+.toggle svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s;
+}
+.toggleOpen svg { transform: rotate(90deg); }
+.table {
+  margin-top: 8px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-faint);
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+.table td {
+  padding: 6px 8px;
+  color: var(--color-text-body);
+  border-bottom: 1px solid var(--color-border-subtle);
+  vertical-align: top;
+}
+.table tr:last-child td { border-bottom: none; }
+.scenarioId {
+  font-weight: 600;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.priorityBadge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.p0 { background: var(--priority-p0-bg); color: var(--priority-p0-text); }
+.p1 { background: var(--priority-p1-bg); color: var(--priority-p1-text); }
+.p2 { background: var(--priority-p2-bg); color: var(--priority-p2-text); }
+.coverageBadge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.coverageFull { background: var(--coverage-full-bg); color: var(--coverage-full-text); }
+.coverageE2e { background: var(--coverage-e2e-bg); color: var(--coverage-e2e-text); }
+.coverageUnit { background: var(--coverage-unit-bg); color: var(--coverage-unit-text); }
+.coveragePartial { background: var(--coverage-partial-bg); color: var(--coverage-partial-text); }
+.coverageNone { background: var(--coverage-none-bg); color: var(--coverage-none-text); }

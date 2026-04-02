@@ -1,0 +1,6 @@
+.main {
+  margin-top: var(--topbar-height);
+  height: calc(100vh - var(--topbar-height));
+  display: flex;
+  flex-direction: column;
+}

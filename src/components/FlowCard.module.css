@@ -1,0 +1,100 @@
+.cardArea {
+  flex: 1;
+  padding: 24px 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  min-height: 0;
+}
+.cardContainer {
+  width: 100%;
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.card {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.card::-webkit-scrollbar { width: 4px; }
+.card::-webkit-scrollbar-track { background: transparent; }
+.card::-webkit-scrollbar-thumb { background: #DDD; border-radius: 4px; }
+.cardMain {
+  width: 100%;
+  max-width: 720px;
+  background: var(--color-bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  padding: 32px;
+  flex-shrink: 0;
+}
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.cardMain h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+.cardMain > p {
+  font-size: 14px;
+  color: var(--color-text-body);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.screenshot {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #F5F3F0;
+  border: 2px dashed #D5D0CA;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-placeholder);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.cardNotes {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.designNotesBar {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #F8F6F2;
+  border-radius: 10px;
+  border: 1px solid var(--color-border-subtle);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+.designNotesBar strong {
+  color: var(--color-text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}

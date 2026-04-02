@@ -1,0 +1,19 @@
+.caseItem {
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: var(--color-bg-field);
+  border-radius: 10px;
+  border: 1px solid var(--color-border-subtle);
+}
+.caseItem strong {
+  font-size: 13px;
+  color: #3D3832;
+  display: block;
+  margin-bottom: 2px;
+}
+.caseItem p {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}

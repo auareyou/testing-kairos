@@ -1,0 +1,23 @@
+.bar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  justify-content: center;
+}
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+.statDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+.statCount {
+  font-weight: 700;
+  color: var(--color-text);
+}

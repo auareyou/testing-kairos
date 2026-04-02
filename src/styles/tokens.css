@@ -1,0 +1,119 @@
+:root {
+  /* ─── Background ─── */
+  --color-bg: #F5F3EF;
+  --color-bg-card: #FFFFFF;
+  --color-bg-field: #FAFAF8;
+  --color-bg-tabs: #F0EDE8;
+  --color-bg-phase: #ECEAE6;
+  --color-bg-phase-hover: #E3E0DB;
+  --color-bg-phase-completed: #E2F0E8;
+  --color-bg-phase-completed-hover: #D5E8DD;
+  --color-bg-phase-active: #FDF0DD;
+  --color-bg-phase-active-hover: #FCE8C8;
+
+  /* ─── Borders ─── */
+  --color-border: #E5E1DB;
+  --color-border-subtle: #EEEAE4;
+  --color-border-phase-active: #E0B050;
+
+  /* ─── Text ─── */
+  --color-text: #1A1A1A;
+  --color-text-body: #4A4540;
+  --color-text-secondary: #5C5650;
+  --color-text-muted: #6B6560;
+  --color-text-faint: #777;
+  --color-text-placeholder: #A09A92;
+  --color-text-phase-completed: #15603A;
+  --color-text-phase-active: #5C3800;
+  --color-text-dot: #8A8580;
+
+  /* ─── Accent ─── */
+  --color-accent: #F5A623;
+  --color-accent-alpha: #F5A62344;
+
+  /* ─── Dots ─── */
+  --color-dot-border: #C5C0BA;
+  --color-dot-active-border: #C09030;
+  --color-dot-completed-bg: #15603A;
+  --color-dot-active-bg: #5C3200;
+
+  /* ─── Type Badges ─── */
+  --type-physical-bg: #E8F5EC;
+  --type-physical-text: #1B7A3D;
+  --type-screen-bg: #E8F0FA;
+  --type-screen-text: #2563EB;
+  --type-input-bg: #FEF3E2;
+  --type-input-text: #B8700A;
+  --type-action-bg: #F0E8FA;
+  --type-action-text: #7C3AED;
+  --type-system-bg: #FAE8EE;
+  --type-system-text: #C0294A;
+  --type-optional-bg: #E8FAFA;
+  --type-optional-text: #0E7490;
+  --type-complete-bg: #E8F5EC;
+  --type-complete-text: #1B7A3D;
+
+  /* ─── Variant Badges ─── */
+  --variant-mvp-bg: #E8F0FA;
+  --variant-mvp-text: #2563EB;
+  --variant-mvp-border: #D4DEF0;
+  --variant-future-bg: #F5F0FA;
+  --variant-future-text: #7C3AED;
+  --variant-future-border: #DDD0F0;
+
+  /* ─── Status Badges ─── */
+  --status-has-view-bg: #E8F5EC;
+  --status-has-view-text: #1B7A3D;
+  --status-placeholder-bg: #FFF8C5;
+  --status-placeholder-text: #9A6700;
+  --status-missing-bg: #FAE8EE;
+  --status-missing-text: #C0294A;
+  --status-coming-soon-bg: #E8F0FA;
+  --status-coming-soon-text: #2563EB;
+  --status-system-bg: #F0EDE8;
+  --status-system-text: #777;
+
+  /* ─── Note Cards ─── */
+  --note-design-bg: #F0F4FA;
+  --note-design-border: #D4DEF0;
+  --note-design-text: #3A5580;
+  --note-design-label: #1D4ED8;
+  --note-warn-bg: #FEF7ED;
+  --note-warn-border: #F0DFC0;
+  --note-warn-text: #6B5020;
+  --note-warn-label: #A06008;
+  --note-hooked-bg: #F5F0FA;
+  --note-hooked-border: #DDD0F0;
+  --note-hooked-text: #553A85;
+  --note-hooked-label: #6D28D9;
+  --note-superbetter-bg: #EDF8F0;
+  --note-superbetter-border: #C4E8D0;
+  --note-superbetter-text: #1E5A3A;
+  --note-superbetter-label: #15803D;
+
+  /* ─── Priority Badges ─── */
+  --priority-p0-bg: #FAE8EE;
+  --priority-p0-text: #C0294A;
+  --priority-p1-bg: #FEF3E2;
+  --priority-p1-text: #B8700A;
+  --priority-p2-bg: #E8F0FA;
+  --priority-p2-text: #2563EB;
+
+  /* ─── Coverage Badges ─── */
+  --coverage-full-bg: #E8F5EC;
+  --coverage-full-text: #1B7A3D;
+  --coverage-e2e-bg: #E8F0FA;
+  --coverage-e2e-text: #2563EB;
+  --coverage-unit-bg: #F0EDE8;
+  --coverage-unit-text: #5C5650;
+  --coverage-partial-bg: #FFF8C5;
+  --coverage-partial-text: #9A6700;
+  --coverage-none-bg: #FAE8EE;
+  --coverage-none-text: #C0294A;
+
+  /* ─── Typography ─── */
+  --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+
+  /* ─── Layout ─── */
+  --topbar-height: 60px;
+}

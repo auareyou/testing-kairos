@@ -1,0 +1,42 @@
+.header {
+  padding: 24px 32px 0;
+  flex-shrink: 0;
+  text-align: center;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.header p {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  justify-content: center;
+}
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+.legendSeparator {
+  composes: legendItem;
+  margin-left: 12px;
+  border-left: 1px solid #DDD;
+  padding-left: 16px;
+}

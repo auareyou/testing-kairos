@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 12px;
+}
+.single { grid-template-columns: 1fr; }
+.triple { grid-template-columns: 1fr 1fr 1fr; }
+.item {
+  font-size: 13px;
+  color: var(--color-text-body);
+  padding: 9px 12px;
+  background: var(--color-bg-field);
+  border-radius: 8px;
+  border: 1px solid var(--color-border-subtle);
+  line-height: 1.5;
+}
+.conditional {
+  border-color: var(--color-accent-alpha);
+  color: #7A5510;
+}
+.conditional::before {
+  content: '↳ ';
+  color: var(--color-accent);
+  font-weight: 600;
+}

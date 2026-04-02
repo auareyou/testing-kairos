@@ -1,0 +1,15 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.badge svg { width: 10px; height: 10px; flex-shrink: 0; }
+.mvp { background: var(--variant-mvp-bg); color: var(--variant-mvp-text); border: 1px solid var(--variant-mvp-border); }
+.future { background: var(--variant-future-bg); color: var(--variant-future-text); border: 1px solid var(--variant-future-border); }

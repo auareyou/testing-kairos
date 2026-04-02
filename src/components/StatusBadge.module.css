@@ -1,0 +1,16 @@
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.hasView { background: var(--status-has-view-bg); color: var(--status-has-view-text); }
+.placeholder { background: var(--status-placeholder-bg); color: var(--status-placeholder-text); }
+.missingView { background: var(--status-missing-bg); color: var(--status-missing-text); }
+.comingSoon { background: var(--status-coming-soon-bg); color: var(--status-coming-soon-text); }
+.systemNoUi { background: var(--status-system-bg); color: var(--status-system-text); }
